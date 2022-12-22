@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("realblue.jpg");
+    background-size: cover;
+}
+
+header {
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* ! Header Start */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+nav .menu .menu-button {
+    color: #0ba2c0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25s ease;
+}
+
+nav .menu .menu-button:hover {
+    background-color: #0ba2c0;
+    color: white;
+
+}
+
+/* ! Header End */
+
+/* * section start */
+
+/*  todo book  start*/
+.book {
+    color: white;
+    height: calc(100vh -100px);
+    padding-top: 0%;
+    display: inline-block;
+    margin: 46px;
+}
+
+.book .link {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.book .link a {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+}
+.book .link a:hover {
+    background-color: #0ba2c0;
+    color: white;
+
+}
+/*  todo book  end*/
+
+
+.content {
+    color: white;
+    height: calc(100vh -100px);
+    padding-top: 0px;
+    display: inline-block;
+    margin: 100px;
+}
+
+.content h1 {
+    font-size: 60px;
+    text-align: center !important;
+}
+
+.content p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    column-gap: 16px;
+}
+
+.content .links a {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+}
+
+.content .links a:hover {
+    background-color: #0ba2c0;
+    color: white;
+
+}
+
+.header .search-box{
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 2rem;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+/* ! Maps */
+
+
+.maps{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    display: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15cm;
+    padding-right: 15cm;
+}
+
+/* * section end */
+
+/* ? responsive start */
+@media(max-width:576px) {
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu ul {
+        column-gap: 20px;
+    }
+
+    .menu .menu-button {
+        display: none;
+    }
+
+    .content {
+        padding-top: 50px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content .links {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .content .links a {
+        padding: 14px;
+        width: 90%;
+    }
+}
+
+.btn-search {
+    background-color: #0ba2c0;
+    color: white;
+}
+
+.btn-search a:hover {
+    background-color: #0ba2c0;
+    color: white;
+}
+
+/* !Search-bar */
+.search-bar {
+
+    height: 40px;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    padding-left: 16px;
+    border-radius: 4px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--search-bg);
+    border-radius: 2px;
+    font-family: var(--body-font);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px 0 40px;
+    box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+}
+
+.search-bar:hover {
+    border-radius: 56px;
+    color: #0ba2c0;
+    text-decoration: none;
+
+}
+
+/* ? responsive end */
+
+/* Özgeçmiş! */
+.history {
+    width: 100%;
+    font-size: 14px;
+    text-emphasis-position: center;
+    text-align: center;
+    padding-top: 0%;
+}
+
+.resume{
+    width: 100%;
+    font-size: 20px;
+    text-emphasis-position: center;
+    text-align: center;
+    padding-top: 0%;
+}
+
+.about{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 12%;
+}
+
+.about{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 12%;
+}
+
+.about h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 0%;
+}
+
+.color{
+    color: white;
+    padding-top: 0%;
+    text-align: center center;
+}
+
+.ornek{
+    width: 900px;
+    margin:auto;
+}
+.sola-kaydir{
+    float:left;
+    padding:0 3px 10px 0;
+    }
+
+.saga-kaydir{
+    float:right;
+    padding:0 0 10px 10px;
+    }
+
+.ornek p{
+    color: white;
+}
+
+.ornek h1{
+    color: white;
+}
